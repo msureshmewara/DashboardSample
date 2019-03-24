@@ -1,0 +1,3 @@
+rootProject.name = 'DashboardSample'
+
+include ':app'
