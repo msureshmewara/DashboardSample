@@ -34,7 +34,7 @@ export default class ClearanceSale extends Component<Props> {
             <Text style={styles.productDiscountPrice}>{'\u20B9'} 780</Text>
         </View>
       </View>
-      
+
       <View style={styles.rowitems}>
       <Image source={{ uri: 'https://placeimg.com/640/640/nature' }} style={styles.customImage} />
         <Text numberOfLines={1}
@@ -42,7 +42,7 @@ export default class ClearanceSale extends Component<Props> {
         <View style={styles.productPrice}>
             <Text style={styles.productDiscountPrice}>{'\u20B9'} 920</Text>
         </View>
-        
+
       </View>
 
       <View style={styles.rowitems}>
@@ -95,7 +95,7 @@ const styles = StyleSheet.create({
   clearanceSaleHeading: {
     fontSize: 23,
     fontWeight: 'bold',
-    paddingLeft: 10,  
+    paddingLeft: 10,
     color: '#C0C0C0',
   },
   offerDiscountPercentage: {
@@ -118,7 +118,7 @@ const styles = StyleSheet.create({
   productname: {
     fontSize: 15,
     fontWeight: 'bold',
-    paddingLeft: 10,  
+    paddingLeft: 10,
   },
   productDescription: {
     fontSize: 15,
@@ -162,16 +162,24 @@ const styles = StyleSheet.create({
     marginBottom: 5,
   },
   customImage: {
-    flex: 1,
-    width: "70%",
-    height: 70,
+    // flex: 1,
+    // width: "70%",
+    // height: 70,
+    // marginBottom: 20,
+    // borderWidth: 1,
+    // borderRadius: 10,
+    // justifyContent: 'center',
+    // alignItems: 'center',
+    // borderColor: '#F2F2F2',
+    // justifyContent: 'space-between',
+    // transform: [{ rotate: '45deg'}],
+    width: 50,
+    height: 50,
     marginBottom: 20,
-    borderWidth: 1,
-    borderRadius: 10,
     justifyContent: 'center',
     alignItems: 'center',
-    borderColor: '#F2F2F2',
     justifyContent: 'space-between',
-    transform: [{ rotate: '45deg'}],
+    backgroundColor: '#F2F2F2',
+    transform: [{rotate: '45deg'}]
   }
 });

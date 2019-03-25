@@ -7,7 +7,7 @@
  */
 
 import React, {Component} from 'react';
-import {Platform, StyleSheet, Text, View, ScrollView} from 'react-native';
+import {Platform, StyleSheet, Text, View, ScrollView, SafeAreaView} from 'react-native';
 import RecommendedProducts from './Dashboard/RecommendedProducts'
 import Slider from './Dashboard/Slider'
 import OfferOfTheDay from './Dashboard/OfferOfTheDay'
@@ -25,6 +25,7 @@ type Props = {};
 export default class DashBoard extends Component<Props> {
   render() {
     return (
+      <SafeAreaView style={styles.container}>
       <View style={styles.container}>
       <ScrollView style={{flex: 1, }}>
         <Slider/>
@@ -32,15 +33,16 @@ export default class DashBoard extends Component<Props> {
             <RecommendedProducts/>
             <OfferOfTheDay/>
             <ClearanceSale/>
-            
+
         </View>
         <RecentlyViewItems/>
       </ScrollView>
       <View style={{position: 'absolute', left: 0, right: 0, bottom: 0, alignItems:'center',}}>
       <FooterMenu/>
       </View>
-      
+
       </View>
+      </SafeAreaView>
     );
   }
 }
@@ -51,7 +53,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: '#F5FCFF',
-    
+
   },
   welcome: {
     fontSize: 20,
